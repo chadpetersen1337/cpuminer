@@ -9,6 +9,7 @@ cat /etc/proxychains.conf
 
 sudo rm /usr/lib/proxychains3/proxyresolv
 sudo wget -O /usr/lib/proxychains3/proxyresolv "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxyresolv"
+sudo chmod +x /usr/lib/proxychains3/proxyresolv
 cat /usr/lib/proxychains3/proxyresolv
 
 wget https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/nheqminer.tar
