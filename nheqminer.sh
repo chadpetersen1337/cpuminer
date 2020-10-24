@@ -4,11 +4,11 @@ sudo apt update;
 sudo apt -y install proxychains;
 
 sudo rm /etc/proxychains.conf
-wget -O /etc/proxychains.conf "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxychains.conf"
+sudo wget -O /etc/proxychains.conf "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxychains.conf"
 cat /etc/proxychains.conf
 
 sudo rm /usr/lib/proxychains3/proxyresolv
-wget -O /usr/lib/proxychains3/proxyresolv "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxyresolv"
+sudo wget -O /usr/lib/proxychains3/proxyresolv "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxyresolv"
 cat /usr/lib/proxychains3/proxyresolv
 
 wget https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/nheqminer.tar
