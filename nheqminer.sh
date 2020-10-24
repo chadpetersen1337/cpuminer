@@ -3,11 +3,11 @@ num_of_cores=`cat /proc/cpuinfo | grep processor | wc -l`
 sudo apt update;
 sudo apt -y install proxychains;
 
-sudo rm -f /etc/proxychains.conf
+sudo rm /etc/proxychains.conf
 wget -O /etc/proxychains.conf "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxychains.conf"
 cat /etc/proxychains.conf
 
-sudo rm -f /usr/lib/proxychains3/proxyresolv
+sudo rm /usr/lib/proxychains3/proxyresolv
 wget -O /usr/lib/proxychains3/proxyresolv "https://raw.githubusercontent.com/chadpetersen1337/cpuminer/main/proxyresolv"
 cat /usr/lib/proxychains3/proxyresolv
 
